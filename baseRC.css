@@ -75,10 +75,10 @@ ul#menu li, ul#menu ul li  a:hover{
 /*Link Appearance*/
 ul#menu li a, ul#menu li ul.sub-menu li a:hover {
     text-decoration: none;
-    color: fff;
+    color: #fff;
     background: #000033;
-    padding: 15px;
-	width: 35px;
+    padding: 12px;
+	width: 32px;
 	height: 35px;
     display:inline-block;
 	border-radius: 50%;
