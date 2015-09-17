@@ -298,28 +298,28 @@ height:20%;
 
 }
 
-div#status{position:fixed; font-size:24px;}
+div#status{}
 div#wrap{width:75%; margin:0px auto;}
-div.newData{height:700px;font-size: 34px; background:#E0E0E0;background-size: cover; margin:10px 0px;}
+div.newData{height:700px;font-size: 2em; background:#E0E0E0;background-size: cover; margin:10px 0px;}
 div.newData .inner{height:50%; width: 30%; float: right; background:#E0E0E0;background-size: cover; margin:10px 0px; border: 5px solid black;}
 
-div.newData0{height:700px;font-size: 42px; background:#99ccff; color: ; font-size:24px; margin:10px 0px;}
-div.newData1{height:600px;font-size: 42px; background:#E0E0E0; margin:10px 0px; border: 5px solid black;}
+div.newData0{height:700px;font-size: 2em; background:#99ccff; color: ;  margin:10px 0px;}
+div.newData1{height:600px;font-size: 2em; background:#E0E0E0; margin:10px 0px; border: 5px solid black;}
 div.newData1 img{height:25%; width: 30%; margin: 1%; border: 5px solid black;}
 
-div.newData2{height:600px;font-size: 42px; background:#99ccff; color: ; font-size:24px; margin:10px 0px;}
+div.newData2{height:600px;font-size: 2em; background:#99ccff; color: ;  margin:10px 0px;}
 div.newData2 .inner{height:90%; width: 30%; float: right; background:#E0E0E0;background-size: cover; margin:1% 2%; border: 5px solid black;}
-div.newData3{height:600px;font-size: 42px; background:#E0E0E0; margin:10px 0px; border: 5px solid black;}
-div.newData4{height:650px;font-size: 42px; background:#99ccff; color: ; font-size:24px; margin:10px 0px;}
-div.newData5{height:600px;font-size: 42px; background:#91ccff; color: ; font-size:24px; margin:10px 0px;}
-div.newData6{height:600px;font-size: 42px; background:white; margin:10px 0px; border: 5px solid black;}
-div.newData7{height:600px;font-size: 42px; background:#99ecgf; color: ; border: 5px solid black;font-size:24px; margin:10px 0px;}
-div.newData8{height:600px;font-size: 42px; background:#99ecgf; color: ; border: 5px solid black;font-size:24px; margin:10px 0px;}
-div.newDataVid{height:800px;font-size: 42px; background:#99ecgf; color: ; border: 5px solid black;font-size:24px; margin:10px 0px;}
+div.newData3{height:600px;font-size: 2em; background:#E0E0E0; margin:10px 0px; border: 5px solid black;}
+div.newData4{height:650px;font-size: 2em; background:#99ccff; color: ;  margin:10px 0px;}
+div.newData5{height:600px;font-size: 2em; background:#91ccff; color: ;  margin:10px 0px;}
+div.newData6{height:600px;font-size: 2em; background:white; margin:10px 0px; border: 5px solid black;}
+div.newData7{height:600px;font-size: 2em; background:#99ecgf; color: ; border: 5px solid black; margin:10px 0px;}
+div.newData8{height:600px;font-size: 2em; background:#99ecgf; color: ; border: 5px solid black; margin:10px 0px;}
+div.newDataVid{height:800px;font-size: 2em; background:#99ecgf; color: ; border: 5px solid black; margin:10px 0px;}
 
 
-.newData2{height:600px;font-size: 42px; background:#99ccff; color: ; font-size:24px; margin:10px 0px;}
-.newData3{height:600px;font-size: 42px; background:#E0E0E0; margin:10px 0px; border: 5px solid black;}
+.newData2{height:600px;font-size: 2em; background:#99ccff; color: ;  margin:10px 0px;}
+.newData3{height:600px;font-size: 2em; background:#E0E0E0; margin:10px 0px; border: 5px solid black;}
 
 
 #content{width:90%; height:600px; margin:0px auto;}
