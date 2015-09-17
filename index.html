@@ -92,7 +92,7 @@ $(document).ready(function() {
 	var scrollPercent = (scrollAmount / documentHeight) * 100;
 
 	if(scrollPercent > 90 && documentHeight < 9700 && documentHeight < 11000) {
-	$.get('baseVideoS.html', '', function(newitems){
+	$.get('VideoS.html', '', function(newitems){
 			$('#content').append(newitems);
 			updatestatus();
 		});
