@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+
+<script>
+
+
+function yHandler(){
+
+	var wrap = document.getElementById('wrap');
+	var contentHeight = wrap.offsetHeight;
+	var yOffset = window.pageYOffset; 
+	var y = yOffset + window.innerHeight;
+	
+	if(y >= contentHeight && contentHeight < 3000){
+		
+		wrap.innerHTML += '<div class="newData0"><div class="inner-left" style="background-image: url(image/sWrestle.jpg)"></div><div class="inner-big-left" >Deep down '+
+		'inside you know you have no limits. There is nothing that can stop you. You are an indesructible force!! Check This Out!!!</div></div>';
+		wrap.innerHTML += '<div class="newData1">1Lets go, take it to the top do '+
+		'not stop short ever!!!!</div>';
+		wrap.innerHTML += '<div class="newData2"> <div class="inner-big-left">2There is no trying, only doing. By totaly cutting of the possibility'+
+		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Onlinet.</div> <div class="inner" style="background-image: url(image/formationHole.jpg)">Check This Out!!!</div>'+
+		'</div>';
+		wrap.innerHTML += '<div class="newData3">3 There is no trying, only doing. By totaly cutting of the possibility'+
+		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Online. </div>';
+		wrap.innerHTML += '<div class="newData4"><div class="inner-left" style="background-image: url(image/CparaSail.jpg)"></div>4 There is no trying, only doing. By totaly cutting of the possibility'+
+		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Online.</div>';
+		wrap.innerHTML += '<div class="newData5">5 There is no fear in love. Release your inner strength,courageoulsy sacrifice and give to others.'+
+		'</div>';
+		wrap.innerHTML += '<div class="newData6"><div class="inner-big-left">6 There is no trying, only doing. By totaly cutting of the possibility'+
+		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Online.</div><div class="inner-right" style="background-image: url(image/sunSurf.jpg)">Pic here.</div> </div>';
+		wrap.innerHTML += '<div class="newData7">7 Your beliefs effect the way the others treat you. Your reactions'+
+		'to how others treat you encourage your beliefs.</div>';
+		wrap.innerHTML += '<div class="newData8"><div class="inner-left" style="background-image: url(image/maslowTall.jpg)"></div>Your beliefs effect the way the others treat you. Your reactions'+
+		'to how others treat you encourage your beliefs.</div>';
+		wrap.innerHTML += '<div class="newDataVid">7 <p class="vid">"The present is a gift, its time to make use of it!!!!!</p>'+
+		'<br></br>Be Fearless & Live Bravely!!!<br></br><br></br></div>';
+	}
+	var status = document.getElementById('status');
+	status.innerHTML = contentHeight+" | "+y;
+}
+
+
+
+
+
+window.onscroll = yHandler;
+</script>
+<title></title>
+<link rel="stylesheet" type="text/css" href="baseRC.css">
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() { 
+    $('#fadeText1').delay(1500).fadeIn(1000).delay(3500).fadeOut(1500);
+    $('#fadeText2').delay(8000).fadeIn(1500).delay(4000).fadeOut(1500);
+	$('#fadeText3').delay(15000).fadeIn(2000).delay(4000).fadeOut(1500);
+	$('#fadeText4').delay(22000).fadeIn(3000).delay(20000);
+});
+
+
+</script>
+
+ 
+
+<
+<script type="text/javascript">
+	$(function (){
+		$("#slides ul").cycle ({
+			fx: 'fade',
+			speed: 2000,
+			timeout: 4000,
+			prev: '#previous',
+			next:	'#next',
+			
+		})
+	})
+
+	
+	 function show(){
+ $("#fadeText p").addClass("load");
+ }
+
+  $(document).scroll(function(e){
+
+	var scrollAmount = $(window).scrollTop();
+	var documentHeight = $(document).height();
+	
+	var scrollPercent = (scrollAmount / documentHeight) * 100;
+
+	if(scrollPercent > 90 && documentHeight < 9700 && documentHeight < 11000) {
+	$.get('baseVideoS.html', '', function(newitems){
+			$('#content').append(newitems);
+			updatestatus();
+		});
+		
+	}/*if(scrollPercent > 91 && documentHeight > 9000 && documentHeight < 9700) {
+	$.get('Vid&Article.php', '', function(newitems){
+			$('#content').append(newitems);
+			updatestatus();
+		});
+	}*/
+
+	
+});
+
+ 
+ 
+</script>
+
+
+
+</head>
+<div id="Bshell">
+<body background =""; onload="show()">
+
+<div id="head">
+The Positive News
+
+</div>
+
+<div id="top">
+<ul>
+<li><a>About</a></li>
+<li><a>Get Involved</a></li>
+<li><a>Games</a></li>
+<li><a>Stories</a></li>
+<li><a>Quotes</a></li>
+</ul>
+
+</div>
+	<div id="li">
+	<ul id="menu">
+		<li>
+			<a href="#">B</a>
+		</li>
+		<li><a href="#">.</a>
+		</li>
+		<li><a href="#">P</a>
+
+		</li>
+		<li><a href="#">O</a>
+			
+		</li>
+		<li>
+			<a href="#">S</a>
+		</li>
+		<li>
+			<a href="#">I</a>
+		</li>
+		<li>
+			<a href="#">T</a>
+		</li>
+		<li>
+			<a href="#">I</a>
+		</li>
+		<li>
+			<a href="#">V</a>
+		</li>
+		<li>
+			<a href="#">E</a>
+		</li>
+	</ul>
+	</div>
+	<div id="b1">
+
+		<div id="fadeText">	
+		<p id="fadeText1">Today is your day! This is the day you make everything happen. Its not 
+		about your past, its not about what will happen way in the future. 
+		
+		You are not guaranteed tommorrow. It is about making the most out of your now!!.
+		
+		How can life get better today!!</p>
+		
+		
+		<p id="fadeText2">One of the most important ways you can be successful in life is to find meaning in what you are doing. 
+		To live in a way where your
+		behaviors matter. Where you feeling like you are accomplishing something.
+		
+		You are not guaranteed tommorrow. It is about making the most out of your now!!.
+		
+		How can life get better today!!
+		</p>
+		
+		<p id="fadeText3">Define what Success is to you.
+			You may be working in an area with others and have set up your expectation for success, say for example you work in 
+			a job that you get paid to complete projects and your fellow workers also work to complete the same type of projects. 
+			You have set your goal to be the 
+		
+		How can life get better today!!
+		</p>
+		<p id="fadeText4">Today is your day! This is the day you make everything happen. Its not 
+		about your past, its not about what will happen way in the future. 
+		
+		You are not guaranteed tommorrow. It is about making the most out of your now!!.
+		
+		How can life get better today!!</p>
+
+		
+		
+		</div>
+
+ 		
+		<div id="art0">art0
+			<img src="image/headRest.jpg" id="imgT">
+	<h3>DO YOU REALLY WANT TO SLEEP YOUR LIFE AWAY??</h3>
+	<h3>Ten things to do to be successful now:</h3>
+	<p class="p1"><h4>
+One of the most important ways you can be successful in life is to find meaning in what you are doing. To live in a way where your
+behaviors matter. Where you feeling like you are accomplishing something. And one of the most startling things about doing this is:
+Anyone can do it. Take Steven hawkins, or ... or...... These are not remarkable people in the sense that they are different from
+a regular person. They have just had profound meaning attached to there actions. </p>
+
+THE SECRET TO BEING SUCCESFUL
+
+Define what Success is to you.
+You may be working in an area with others and have set up your expectation for success, say for example you work in 
+a job that you get paid to complete projects and your fellow workers also work to complete the same type of projects. 
+You have set your goal to be the top project completer in the company but time and time again another worker continually completes
+more projects than you. One day finally you are getting ready to through up your hands and just say I've done all I can to 
+be the best but keep getting beat out. But instead of labeling yourself as an inferiour employee you come to the realization
+that you have been taking more time to get to know other people and have been taking more time with your friends and family off
+of work than the person who has been higher numbers. You realize that success to you is really to achieve an incredible amount
+of production on the job but also be incredibly successful in relationships.</h4>
+</div>
+		<div id="Definition">
+		<p class="p5">resilient</p><p class="p6">[Def. 1].(n.d.). Oxford-Dictionary Online. In Oxford-Dictionary. Retrieved December 21. 2014, 
+		from http://www.oxforddictionaries.com/definition/.</p>
+		<p class="p7">1(Of a substance or object) able to recoil or spring back into shape after bending, 
+		</p>
+		
+		<p class="p5">success</p><p class="p6">[Def. 1].(n.d.). Oxford-Dictionary Online. In Oxford-Dictionary. Retrieved December 21. 2014, 
+		from http://www.oxforddictionaries.com/definition/.</p>
+		<p class="p7">1The accomplishment of an aim or purpose:</p>	
+		
+	
+		
+		</div>
+	<div id="LowColumn">
+		<div id="topLow">
+	Get Excited
+	</div>
+		<div id="slides">
+		<ul>
+			<li><img src="image/headRest.jpg" height="200px" width="325px" class="slide-img"/></li>
+			<li><img src="image/sunflowerC.jpg"height="200px" width="325px" class="slide-img"/></li>
+			<li><img src="image/WaterStones.jpg"height="200px" width="325px" class="slide-img"/></li>
+		</ul>
+		</div>
+		Everyday we come across a number of situations that we can draw strength
+	</div>
+
+	
+</div>
+	
+</div>
+	
+<!--JS Scroll Section-->
+
+<div id="wrap"><img src="">hello
+<div class="newData2">The inner html of this text will dynamically change after scrolling beyond a certain point.</div>
+<div class="newData3"><div class="inner-left" style="background-image: url(image/Balloons.jpg)">Info to the left.</div><div class="center"  >There is no fear in love.</div><div class="inner-right" style="background-image: url(image/skyR.jpg)">Info to the right.</div></div>
+<div class="newData4"><div class="inner-big-left">Battles are won before ever even taking a step out on the battle field. 
+You can claim victory!!!!!!</div><div class="inner-right" style="background-image: url(image/sbuilding.jpg)">Info to the left.</div></div>
+</div>
+<div id="content">What goes here</div>
+
+<!--End js scroll-->
+
+
+	
+</body>
+</html>
