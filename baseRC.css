@@ -299,7 +299,7 @@ height:20%;
 }
 
 div#status{}
-div#wrap{width:75%; margin:0px auto;}
+div#wrap{width:95%; margin:0px auto;}
 div.newData{height:600px;font-size: 2em; background:#E0E0E0;background-size: cover; margin:10px 0px;}
 div.newData .inner{height:50%; width: 30%; float: right; background:#E0E0E0;background-size: cover; margin:10px 0px; border: 5px solid black;}
 
