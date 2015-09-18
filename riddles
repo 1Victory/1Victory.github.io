@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+
+
+.flip3D{ width:440px; height:240px; margin:10px; float:left;font-size: 2.5em;color: white; }
+.flip3D > .front{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+	background:#FC0; width:440px; height:240px; border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+.flip3D > .back{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #80BFFF; width:440px; height:240px; border-radius: 7px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+.flip3D:hover > .front{
+	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:hover > .back{
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+
+
+
+
+
+.flip3D-2{ width:440px; height:240px; margin:10px; float:left; font-size: 2.5em;  }
+.flip3D-2 > .front{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+	background:#FC0; width:440px; height:240px;  border-radius: 7px;
+	background-size: cover;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+.flip3D-2 > .back{
+	position:absolute;
+	
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #80BFFF; width:440px; height:240px;  border-radius: 7px;
+	background-size: cover;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+.flip3D-2:hover > .front{
+	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D-2:hover > .back{
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+
+.flip-container{height: 900px; width:80%; position: relative; padding-left:10%; margin-right:10%; margin-left:10%; float:center; border: 1px solid black;}
+</style>
+</head>
+<body>
+
+<div class="flip-container">
+
+	<div class="flip3D">
+	  <div class="back" >Box 1 - This is were the answer goes.</div>
+	  <div class="front" style="background-image: url(paintBrick.jpg)">Box 1 - This is where the riddle goes.</div>
+	</div>
+	<div class="flip3D">
+	  <div class="back">Box 2 - Back</div>
+	  <div class="front" style="background-image: url(paintBrick.jpg)">Box 2 - Front</div>
+	</div>
+	<div class="flip3D">
+	  <div class="back" >Box 3 - Back</div>
+	  <div class="front">Box 3 - Front</div>
+	</div>
+
+	<div class="flip3D-2">
+	  <div class="back">Box 1 - Back</div>
+	  <div class="front">Box 1 - Front</div>
+	</div>
+	<div class="flip3D-2">
+	  <div class="back">Box 2 - Back</div>
+	  <div class="front">Box 2 - Front</div>
+	</div>
+	<div class="flip3D-2">
+	  <div class="back">Box 3 - Back</div>
+	  <div class="front">Box 3 - Front</div>
+	</div>
+</div>
+</body>
+</html>
