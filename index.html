@@ -91,7 +91,7 @@ $(document).ready(function() {
 	
 	var scrollPercent = (scrollAmount / documentHeight) * 100;
 
-	if(scrollPercent > 90 && documentHeight < 9700 ) {
+	if(scrollPercent > 90 && documentHeight < 11000 ) {
 	$.get('riddles.html', '', function(newitems){
 			$('#content').append(newitems);
 			updatestatus();
