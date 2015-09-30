@@ -112,6 +112,7 @@ padding: 2px;
 #top ul li a{
 text-decoration: none;
 padding: .2em 1em;
+color:white;
 }
 #top ul li a:hover{
 color: yellow;
