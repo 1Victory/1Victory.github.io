@@ -1,0 +1,153 @@
+<html>
+<titlePractice Page></title>
+<head>
+<link rel="stylesheet" type="text/css" href="styleGame.css">
+
+<style type= "text/css">
+
+		canvas{border: 1px solid black;}
+		
+
+		
+
+#shell{
+top: 5;
+margin-left: 25%;
+margin-right: 25%;
+position: absolute;
+height: 25%;
+width: 50%;
+border: solid black;
+background-color: ;
+border: solid white;
+font-size: 74px;
+color: white;
+font-weight: bold;
+}
+
+
+
+#c1{
+position: absolute;
+height: 700px;
+top: 350;
+left: 15%;
+width: 275;
+border: solid tan;
+}
+
+
+
+#c3{
+position: absolute;
+height: 700px;
+top: 350;
+right: 15%;
+width: 275;
+border: solid grey;
+border-width: 5px;
+}
+
+.AP{
+color:white;
+margin: 20px 20px 20px 150px;
+}
+
+.BP{
+color:white;
+margin: ;
+font-size: 24px;
+}
+		
+</style>
+<script>
+(function(){
+
+function init(){
+     var canvas = document.getElementsByTagName('canvas')[0];
+     var c = canvas.getContext('2d');
+
+     var container = {x:0,y:0,width:1400,height:1400};
+     var circles = [{x:200,y:100,r:50,color:25,vx:12,vy:15},
+                    {x:400,y:250,r:100,color:125,vx:2,vy:-8},
+                    {x:300,y:150,r:25,color:285,vx:20,vy:-20},
+					{x:100,y:250,r:30,color:105,vx:-55,vy:-8},
+                    {x:500,y:150,r:85,color:205,vx:40,vy:-20},
+                    {x:200,y:300,r:75,color:325,vx:15,vy:-12},
+					{x:400,y:400,r:120,color:275,vx:34,vy:-16},
+                    {x:100,y:400,r:120,color:175,vx:-24,vy:-16}
+					
+     ];
+
+
+     function draw(){
+         c.fillStyle = 'black';
+         c.strokeStyle = 'black';
+         c.fillRect(container.x,container.y,container.width,container.height);
+         //c.clearRect(container.x,container.y,container.width,container.height);
+         //c.strokeRect(container.x,container.y,container.width,container.height);
+
+         for(var i=0; i <circles.length; i++){
+             c.fillStyle = 'hsl(' + circles[i].color + ',100%,50%)';
+             c.beginPath();
+             c.arc(circles[i].x,circles[i].y,circles[i].r,0,2*Math.PI,false);
+             c.fill();
+
+             if((circles[i].x + circles[i].vx + circles[i].r > container.x + container.width) || (circles[i].x - circles[i].r + circles[i].vx < container.x)){
+                circles[i].vx = - circles[i].vx;
+             }
+             if((circles[i].y + circles[i].vy + circles[i].r > container.y + container.height) || (circles[i].y - circles[i].r + circles[i].vy < container.y)){
+                 circles[i].vy = - circles[i].vy;
+             }
+             circles[i].x +=circles[i].vx;
+             circles[i].y +=circles[i].vy;
+         }
+
+
+
+         requestAnimationFrame(draw);
+
+     }
+
+
+    requestAnimationFrame(draw);
+
+
+}
+
+//invoke function init once document is fully loaded
+window.addEventListener('load',init,false);
+
+}());  //self invoking function
+
+</script>
+
+<canvas width="1400" height="1400" id="canvas">	</canvas>
+
+<div id="shell">
+<p class="AP">GAMES</p>
+</div>
+
+
+
+<div id="li">
+
+</div>
+</head>
+<body>
+
+
+
+</head>
+<body>
+<div id="c1">
+<p class="BP"><a href="riddlesTeam.html">Click here to play the latest game.</a></p>
+</div>
+
+
+<div id="c3"><p class="BP"><a href="riddlesTeam.html">Click here to play the latest game.</a></p></div>
+
+
+
+</body>
+</html>
