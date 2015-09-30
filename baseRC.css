@@ -338,7 +338,9 @@ div.newData1 img{height:25%; width: 30%; margin: 1%; border: 5px solid black;}
 
 div.newData2{height:600px;font-size: 1.2em; background:#99ccff; color: ;  margin:10px 0px;}
 div.newData2 .inner{height:90%; width: 30%; float: right; background:#E0E0E0;background-size: cover; margin:1% 2%; border: 5px solid black;}
-div.newData3{height:600px;font-size: 1.2em; background:#E0E0E0; margin:10px 0px; border: 5px solid black;}
+/*div.newData3{height:600px;font-size: 1.2em; background:#E0E0E0; margin:10px 0px; border: 5px solid black;}*/
+
+div.newData3{height:600px;font-size: 24px; background:#E0E0E0; margin:10px 0px; border: 5px solid black;border-radius:2%; }
 div.newData4{height:600px;font-size: 1.2em; background:#99ccff; color: ;  margin:10px 0px;}
 div.newData5{height:600px;font-size: 1.2em; background:#91ccff; color: ;  margin:10px 0px;}
 div.newData6{height:600px;font-size: 1.2em; background:white; margin:10px 0px; border: 5px solid black;}
