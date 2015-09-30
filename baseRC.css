@@ -101,13 +101,6 @@ ul#menu li {
 
 }
 
-
-
-
-
-
-
-
 #top ul li{
 display: inline-block;
 list-style-type: none;
@@ -147,11 +140,15 @@ border: 1px solid black;
 }
 #imgT{
 float: left;
-height: 20%;
+height: 15%;
 width: 40%;
 border: 2px solid black;
 margin: 3px;
+background-size:cover;
 }
+
+
+
 #typeBox{
 float: left;
 width: 63%;
