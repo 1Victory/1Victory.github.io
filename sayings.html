@@ -1,43 +1,65 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-
+<!DOCTYPE html>
+<html>
+  <head>
+  What goes here
+    <title>Ribbit - A Treehouse Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<!--   <link href="css/baseRC.css" rel="stylesheet" media="screen">-->
+    <link href="css/PosN1.css" rel="stylesheet" media="screen">
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
 
 <script>
 
 
 function yHandler(){
 
-	var wrap = document.getElementById('wrap');
-	var contentHeight = wrap.offsetHeight;
+	var container = document.getElementById('holder');
+	var contentHeight = container.offsetHeight;
 	var yOffset = window.pageYOffset; 
 	var y = yOffset + window.innerHeight;
 	
-	if(y >= contentHeight && contentHeight < 92000){
+	if(y >= contentHeight && contentHeight < 38000){
+	//if(y >= contentHeight){
 	//if(y >= contentHeight){
 		
-		wrap.innerHTML += '<div class="newData0"><div class="inner-left" style="background-image: url(image/sWrestle.jpg)"></div><div class="inner-big-left" ><p class="p12">Deep down '+
-		'inside you know you have no limits. There is nothing that can stop you. You are an indesructible force!!</p></div></div>';
-		wrap.innerHTML += '<div class="newData1"><p class="p13">It often takes a vision to step forward into the future. What can limit you from dreaming???</p> '+
-		'</div>';
-		wrap.innerHTML += '<div class="newData2"> <div class="inner-big-left"><p class="p11">There is no trying, only doing. By totaly cutting of the possibility'+
-		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Onlinet</p>.</div> <div class="inner-right" style="background-image: url(image/formationHole.jpg)">Check This Out!!!</div>'+
-		'</div>';
-		wrap.innerHTML += '<div class="newData3"><div class="inner-big-left"><p class="p11">3 -There is no trying, only doing. By totaly cutting of the possibility'+
-		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Online.</p></div> </div>';
-		wrap.innerHTML += '<div class="newData4"><div class="inner-left" style="background-image: url(image/CparaSail.jpg)"></div><p class="p12">4 There is no trying, only doing. By totaly cutting of the possibility'+
-		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Online.</p></div>';
-		wrap.innerHTML += '<div class="newData5"><p class="p13">There is no fear in love. Release your inner strength, courageoulsy sacrifice and give to others.'+
-		'</p></div>';
-		wrap.innerHTML += '<div class="newData6"><div class="inner-big-left">6 There is no trying, only doing. By totaly cutting of the possibility'+
-		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Online.</div><div class="inner-right" style="background-image: url(image/sunSurf.jpg)">Pic here.</div> </div>';
-		wrap.innerHTML += '<div class="newData7"><p class="p13"> Your beliefs effect the way the others treat you. Your reactions'+
-		'to how others treat you encourage your beliefs.</p></div>';
-		wrap.innerHTML += '<div class="newData8"><div class="inner-left" style="background-image: url(image/maslowTall.jpg)"></div><p class="p12">Your beliefs effect the way the others treat you. Your reactions'+
-		'to how others treat you encourage your beliefs.</p></div>';
-		wrap.innerHTML += '<div class="newDataVid">7 <p class="p10">"The present is a gift, its time to make use of it!!!!!'+
-		'<br></br>Be Fearless & Live Bravely!!!</p><br></br><br></br></div>';
+container.innerhtml += '<div class="row rthree1"><p>check check</p><div class="newData2"><p class="p10">The inner html of this text will dynamically'+
+'change after scrolling beyond a certain point.</p></div></div>';		
+			
+container.innerHTML += '<div class="row rthree2"><div class="col-sm-4 three"><div class="inner-left" style="background-image:'+
+'url(image/Balloons.jpg)">Info to the left.</div></div><div class="col-sm-4 three"><div class="center"><p class="p11">There is'+
+'no fear in love.</div></div><div class="col-sm-4 hidden-xs three"><div class="inner-right" style="background-image:'+
+' url(image/skyR.jpg)">Info to the right.</div></div></div>';
+
+container.innerHTML += '<div class="row rthree3"><div class="col-sm-8 three"><div class="inner-big-left"><p class="p12">Battles'+
+' are won before ever even taking a step out on the battle field. Claim your victory!!!!!!</div></div><div class="col-sm-4'+
+' three"><div class="inner-right" style="background-image: url(image/sbuilding.jpg)">Info to the left.</div></div></div>';
+
+container.innerHTML += '<div class="row rthree4"><div class="col-sm-4 hidden-xs three"><div class="inner-left"'+
+' style="background-image: url(image/sWrestle.jpg)"></div></div><div class="col-sm-8 hidden-xs three"><div class="inner-big-left">'+
+'<p class="p12">Deep down inside you know you have no limits. There is nothing that can stop you.You are an indesructible'+
+ 'force!!</p></div></div></div>';
+ 
+container.innerHTML += '<div class="row rthree5"><div id="PicVid"><button onclick="myFunction()"><img src="image/ButtonSkate.jpg">'+
+'</div>Click the image to watch a video.<button  onclick="myFunction()"><p class="p13">It often takes a vision to step'+
+' forward into the future. What can limit you from dreaming???</p></div>';
+
+container.innerHTML += '<div class="row rthree6"><div class="col-sm-8 hidden-xs three"><div class="inner-big-left">'+
+'<p class="p11">There is no trying, only doing. By totaly cutting of the possibility of giving up or failing, you willfind'+
+' a way to make it happen.Oxford-Dictionary Onlinet</p>.</div></div><div class="col-sm-4 hidden-xs three">'+
+' <div class="inner-right" style="background-image: url(image/formationHole.jpg)">Check This Out!!!</div></div></div>';	
+		
+			
+	
+
+	
 	}
 	var status = document.getElementById('status');
 	status.innerHTML = contentHeight+" | "+y;
@@ -48,35 +70,97 @@ function yHandler(){
 
 
 window.onscroll = yHandler;
-</script>
-<title></title>
-<link rel="stylesheet" type="text/css" href="baseRC.css">
-<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-<script type="text/javascript" src="js/jquery.cycle.js"></script>
 
+
+
+</script>
+
+  </head>
+  <body>
+<div id="head">
+<p class="titleText">The Positive News</p>
+
+</div>
+    <!--Navbar -->
+    <div class="navbar navbar-default ">
+      <div class="container">
+        <!--<a class="main-logo pull-left" href="#">Ribbit</a>
+        <p class="navbar-text pull-right hidden-xs">A Treehouse Project</p> -->
+		
+<ul class="list-inline">
+<li><a id="modal_trigger" href="#modal">Get Involved</a></li>
+<li><a href="riddlesTeam.html">Excersises</a></li>
+<li><a href="Games.html">Games</a></li>
+<li><a href="articles.html">Articles</a></li>
+<li><a href="sayings.html">Quotes</a></li>
+</ul>
+
+      </div>
+    </div><!-- End navbar -->
 
  
+     <div class="jumbotron">
+      <div class="container">
+<div class="row rthree4"><div class="col-sm-4 hidden-xs three"><div class="inner-left"'+
+' style="background-image: url(image/sWrestle.jpg)"></div></div><div class="col-sm-8 hidden-xs three"><div class="inner-big-left">'+
+'<p class="p12">Deep down inside you know you have no limits. There is nothing that can stop you.You are an indesructible'+
+ 'force!!</p></div></div></div>
 
-
-
-
-
-</head>
+<div id="holder">
 
 	
-<!--JS Scroll Section-->
+		<div class="row rthree1"></div>
 
-<div id="wrap"><img src="">
-<div class="newData2"><p class="p10">The inner html of this text will dynamically change after scrolling beyond a certain point.</p></div>
-<div class="newData3"><div class="inner-left" style="background-image: url(image/Balloons.jpg)">Info to the left.</div><div class="center"><p class="p11">There is no fear in love.</div><div class="inner-right" style="background-image: url(image/skyR.jpg)">Info to the right.</div></div>
-<div class="newData4"><div class="inner-big-left"><p class="p12">Battles are won before ever even taking a step out on the battle field. 
-Claim your victory!!!!!!</div><div class="inner-right" style="background-image: url(image/sbuilding.jpg)">Info to the left.</div></div>
+        <div class="row rthree2"></div>
+	    
+	    <div class="row rthree3"></div>
+		  
+		<div class="row rthree5"></div>
+	 	
+		<div class="row rthree4"></div>
+		
+		<div class="row rthree5">
+	
+
+		
+		</div>
+		
+		<div class="row rthree6">
+		
+
+		
+		</div>
+
 </div>
-<div id="content">What goes here</div>
 
-<!--End js scroll-->
+</div>
+
+	<!--<script src="http://code.jquery.com/jquery.js"></script>-->
 
 
-	
-</body>
+  </body>
+<div class="footer">The footer goes here.
+  
+<p class="p5">resilient</p><p class="p6"><p class="p0">http://www.oxforddictionaries.com/definition/.</p></p>
+<p class="p7">1(Of a substance , </p><p class="p5">success</p><p class="p6"> <p class="p0"></p></p>
+
+<ul class="list-inline">
+<li><a id="modal_trigger" href="#modal">Contacts</a></li>
+<li><a href="riddlesTeam.html">Excersises</a></li>
+<li><a href="Games.html">Games</a></li>
+<li><a href="articles.html">Articles</a></li>
+<li><a href="sayings.html">Quotes</a></li>
+</ul>
+<p class="p6" style="margin-bottom:0%">All rights reserved copywright@2015</p>
+
+</div>
 </html>
+	<script type="text/javascript" src="js/video.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
