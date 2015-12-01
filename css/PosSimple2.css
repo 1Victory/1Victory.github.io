@@ -739,9 +739,9 @@ border-bottom: ;
 margin-bottom: 2%;
 }
 
-#containerCircles{height: 20px; width:385px; color:black; background-color:#C9ccF3; border: ;}
+#containerCircles{height: 20px; width:375px; color:black; background-color:#C9ccF3; border: ;}
 
-.img-circle{font-size:1.1em;
+.img-circle{font-size:1em;
 float:;
 font-weight:bold;
 background-color:#A0A0A0;
