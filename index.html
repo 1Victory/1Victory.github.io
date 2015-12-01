@@ -1,65 +1,68 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-
+<!DOCTYPE html>
+<html>
+  <head>
+  What goes here
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<!--   <link href="css/baseRC.css" rel="stylesheet" media="screen">-->
+    <link href="css/PosSimple2.css" rel="stylesheet" media="screen">
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
 
 <script>
 
 
 function yHandler(){
 
-	var wrap = document.getElementById('wrap');
-	var contentHeight = wrap.offsetHeight;
+	var container = document.getElementById('holder');
+	var contentHeight = container.offsetHeight;
 	var yOffset = window.pageYOffset; 
 	var y = yOffset + window.innerHeight;
 	
-	if(y >= contentHeight && contentHeight < 3000){
-	
-	/*	
-		wrap.innerHTML += '<div class="newData0"><div class="inner-left" style="background-image: url(image/sWrestle.jpg)"></div><div class="inner-big-left" >Deep down '+
-		'inside you know you have no limits. There is nothing that can stop you. You are an indesructible force!! Check This Out!!!</div></div>';
-		wrap.innerHTML += '<div class="newData1">1Lets go, take it to the top do '+
-		'not stop short ever!!!!</div>';
-		wrap.innerHTML += '<div class="newData2"> <div class="inner-big-left">2There is no trying, only doing. By totaly cutting of the possibility'+
-		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Onlinet.</div> <div class="inner-right" style="background-image: url(image/formationHole.jpg)">Check This Out!!!</div>'+
-		'</div>';
-		wrap.innerHTML += '<div class="newData3">3 There is no trying, only doing. By totaly cutting of the possibility'+
-		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Online. </div>';
-		wrap.innerHTML += '<div class="newData4"><div class="inner-left" style="background-image: url(image/CparaSail.jpg)"></div>4 There is no trying, only doing. By totaly cutting of the possibility'+
-		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Online.</div>';
-		wrap.innerHTML += '<div class="newData5">5 There is no fear in love. Release your inner strength,courageoulsy sacrifice and give to others.'+
-		'</div>';
-		wrap.innerHTML += '<div class="newData6"><div class="inner-big-left">6 There is no trying, only doing. By totaly cutting of the possibility'+
-		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Online.</div><div class="inner-right" style="background-image: url(image/sunSurf.jpg)">Pic here.</div> </div>';
-		wrap.innerHTML += '<div class="newData7">7 Your beliefs effect the way the others treat you. Your reactions'+
-		'to how others treat you encourage your beliefs.</div>';
-		wrap.innerHTML += '<div class="newData8"><div class="inner-left" style="background-image: url(image/maslowTall.jpg)"></div>Your beliefs effect the way the others treat you. Your reactions'+
-		'to how others treat you encourage your beliefs.</div>';
-		wrap.innerHTML += '<div class="newDataVid">7 <p class="vid">"The present is a gift, its time to make use of it!!!!!</p>'+
-		'<br></br>Be Fearless & Live Bravely!!!<br></br><br></br></div>';
-	*/
-		wrap.innerHTML += '<div class="newData0"><div class="inner-left" style="background-image: url(image/sWrestle.jpg)"></div><div class="inner-big-left" ><p class="p12">Deep down '+
-		'inside you know you have no limits. There is nothing that can stop you. You are an indesructible force!!</p></div></div>';
-		wrap.innerHTML += '<div class="newData1"><p class="p13">It often takes a vision to step forward into the future. What can limit you from dreaming???</p> '+
-		'</div>';
-		wrap.innerHTML += '<div class="newData2"> <div class="inner-big-left"><p class="p11">There is no trying, only doing. By totaly cutting of the possibility'+
-		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Onlinet</p>.</div> <div class="inner-right" style="background-image: url(image/formationHole.jpg)">Check This Out!!!</div>'+
-		'</div>';
-		wrap.innerHTML += '<div class="newData3"><div class="inner-big-left"><p class="p11">3 -There is no trying, only doing. By totaly cutting of the possibility'+
-		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Online.</p></div> </div>';
-		wrap.innerHTML += '<div class="newData4"><div class="inner-left" style="background-image: url(image/CparaSail.jpg)"></div><p class="p12">4 There is no trying, only doing. By totaly cutting of the possibility'+
-		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Online.</p></div>';
-		wrap.innerHTML += '<div class="newData5"><p class="p13">There is no fear in love. Release your inner strength, courageoulsy sacrifice and give to others.'+
-		'</p></div>';
-		wrap.innerHTML += '<div class="newData6"><div class="inner-big-left">6 There is no trying, only doing. By totaly cutting of the possibility'+
-		'of giving up or failing, you willfind a way to make it happen.Oxford-Dictionary Online.</div><div class="inner-right" style="background-image: url(image/sunSurf.jpg)">Pic here.</div> </div>';
-		wrap.innerHTML += '<div class="newData7"><p class="p13"> Your beliefs effect the way the others treat you. Your reactions'+
-		'to how others treat you encourage your beliefs.</p></div>';
-		wrap.innerHTML += '<div class="newData8"><div class="inner-left" style="background-image: url(image/maslowTall.jpg)"></div><p class="p12">Your beliefs effect the way the others treat you. Your reactions'+
-		'to how others treat you encourage your beliefs.</p></div>';
-		wrap.innerHTML += '<div class="newDataVid">7 <p class="p10">"The present is a gift, its time to make use of it!!!!!'+
-		'<br></br>Be Fearless & Live Bravely!!!</p><br></br><br></br></div>';
+	if(y >= contentHeight && contentHeight < 8500){
+	//if(y >= contentHeight){
+	//if(y >= contentHeight){
+		
+container.innerhtml += '<div class="row rthree1"><p>check check</p><div class="newData2"><p class="p10">The inner html of this text will dynamically'+
+'change after scrolling beyond a certain point.</p></div></div>';		
+			
+container.innerHTML += '<div class="row rthree2"><div class="col-sm-4 three"><div class="inner-left" style="background-image:'+
+'url(image/Balloons.jpg)">Info to the left.</div></div><div class="col-sm-4 three"><div class="center"><p class="p11">There is'+
+'no fear in love.</div></div><div class="col-sm-4 hidden-xs three"><div class="inner-right" style="background-image:'+
+' url(image/skyR.jpg)">Info to the right.</div></div></div>';
+
+container.innerHTML += '<div class="row rthree3"><div class="col-sm-8 three"><div class="inner-big-left"><p class="p12">Battles'+
+' are won before ever even taking a step out on the battle field. Claim your victory!!!!!!</div></div><div class="col-sm-4'+
+' three"><div class="inner-right" style="background-image: url(image/sbuilding.jpg)">Info to the left.</div></div></div>';
+
+container.innerHTML += '<div class="row rthree4"><div class="col-sm-4 hidden-xs three"><div class="inner-left"'+
+' style="background-image: url(image/sWrestle.jpg)"></div></div><div class="col-sm-8 hidden-xs three"><div class="inner-big-left">'+
+'<p class="p12">Deep down inside you know you have no limits. There is nothing that can stop you.You are an indesructible'+
+ 'force!!</p></div></div></div>';
+ 
+container.innerHTML += '<div class="row rthree5"><div id="PicVid"><button onclick="myFunction()"><img src="image/ButtonSkate.jpg">'+
+'</div>Life is more exiting when your in motion!!<button  onclick="myFunction()"><p class="p13">It often takes a vision to step'+
+' forward into the future. What can limit you from dreaming???</p></div>';
+
+container.innerHTML += '<div class="Definition1"><p class="p5">resilient</p><p class="p6">[Def. 1].(n.d.). Oxford-Dictionary Online.'+
+'In Oxford-Dictionary. Retrieved December 21. 2014, from <p class="p0">http://www.oxforddictionaries.com/definition/.</p></p>'+
+'<p class="p7">1(Of a substance or object) able to recoil or spring back into shape after bending, </p>'+		
+'<p class="p5">success</p><p class="p6">[Def. 1].(n.d.). Oxford-Dictionary Online. In Oxford-Dictionary. Retrieved December 21. 2014,'+
+'from <p class="p0">http://www.oxforddictionaries.com/definition/.</p></p><p class="p7">1The accomplishment of an aim or purpose:</p>	</div>';
+
+container.innerHTML += '<div class="row rthree6"><div class="col-sm-8 hidden-xs three"><div class="inner-big-left">'+
+'<p class="p11">There is no trying, only doing. By totaly cutting of the possibility of giving up or failing, you willfind'+
+' a way to make it happen.Oxford-Dictionary Onlinet</p>.</div></div><div class="col-sm-4 hidden-xs three">'+
+' <div class="inner-right" style="background-image: url(image/formationHole.jpg)">Check This Out!!!</div></div></div>';	
+		
+
 	}
 	var status = document.getElementById('status');
 	status.innerHTML = contentHeight+" | "+y;
@@ -70,15 +73,13 @@ function yHandler(){
 
 
 window.onscroll = yHandler;
-</script>
-<title></title>
-<link rel="stylesheet" type="text/css" href="baseRC.css">
-<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-<script type="text/javascript" src="js/jquery.cycle.js"></script>
 
+
+
+</script>
 <script type="text/javascript">
 $(document).ready(function() { 
-    $('#fadeText1').delay(1500).fadeIn(1000).delay(3500).fadeOut(1500);
+    $('#fadeText1').delay(1500).fadeIn(500).delay(3500).fadeOut(1500);
     $('#fadeText2').delay(8000).fadeIn(1500).delay(4000).fadeOut(1500);
 	$('#fadeText3').delay(15000).fadeIn(2000).delay(4000).fadeOut(1500);
 	$('#fadeText4').delay(22000).fadeIn(3000).delay(20000);
@@ -107,92 +108,55 @@ $(document).ready(function() {
  $("#fadeText p").addClass("load");
  }
 
-  $(document).scroll(function(e){
-
-	var scrollAmount = $(window).scrollTop();
-	var documentHeight = $(document).height();
-	
-	var scrollPercent = (scrollAmount / documentHeight) * 100;
-
-	if(scrollPercent > 90 && documentHeight < 11000 ) {
-	for(i=1; i<=1; i++){
-	$.get('riddles.html', '', function(newitems){
-			$('#content').append(newitems);
-			updatestatus();
-		});
-		
-		}
-		
-	}/*if(scrollPercent > 91 && documentHeight > 9000 && documentHeight < 9700) {
-	$.get('Vid&Article.php', '', function(newitems){
-			$('#content').append(newitems);
-			updatestatus();
-		});
-	}*/
-
-	
-});
 
  
  
-</script>
-
-
-
-</head>
-<div id="Bshell">
-<body background =""; onload="show()">
-
+</script>	
+	
+  </head>
+  <body>
 <div id="head">
-The Positive News
+<p class="titleText">The Positive News</p>
 
 </div>
-
-<div id="top">
-<ul>
-<li><a href="riddlesTeam.html">Team Building</a></li>
-<li><a href="GamesIn.html">Games</a></li>
+    <!--Navbar -->
+    <div class="navbar navbar-default ">
+      <div class="container">
+        <!--<a class="main-logo pull-left" href="#">Ribbit</a>
+        <p class="navbar-text pull-right hidden-xs">A Treehouse Project</p> -->
+		
+<ul class="list-inline">
+<li><a id="modal_trigger" href="#modal">Get Involved</a></li>
+<li><a href="riddlesTeam.html">Excersises</a></li>
+<li><a href="Games.html">Games</a></li>
 <li><a href="articles.html">Articles</a></li>
 <li><a href="sayings.html">Quotes</a></li>
 </ul>
 
-</div>
-	<div id="li">
-	<ul id="menu">
-		<li>
-			<a href="#">B</a>
-		</li>
-		<li><a href="#">.</a>
-		</li>
-		<li><a href="#">P</a>
+      </div>
+    </div><!-- End navbar -->
+ <div id="containerCircles" class="pull-right">
+ <div class="img-circle" >B</div>
+ <div class="img-circle">.</div>
+ <div class="img-circle" >P</div>
+ <div class="img-circle" >O</div>
+ <div class="img-circle" >S</div>
+ <div class="img-circle">I</div>
+ <div class="img-circle" >T</div>
+ <div class="img-circle">I</div>
+ <div class="img-circle">V</div>
+ <div class="img-circle">E</div>
+ 
 
-		</li>
-		<li><a href="#">O</a>
-			
-		</li>
-		<li>
-			<a href="#">S</a>
-		</li>
-		<li>
-			<a href="#">I</a>
-		</li>
-		<li>
-			<a href="#">T</a>
-		</li>
-		<li>
-			<a href="#">I</a>
-		</li>
-		<li>
-			<a href="#">V</a>
-		</li>
-		<li>
-			<a href="#">E</a>
-		</li>
-	</ul>
-	</div>
-	<div id="b1">
+ </div>
+ 
+     <div class="jumbotron">
+      <div class="container">
 
-		<div id="fadeText">	
+
+<div class="row rthree3"><div class="col-sm-8 three"><div class="inner-big-leftLargeFirst"><p class="pF">
+Welcome to a premium motivational site.</p>
+<div id="fadeText">	
 		<p id="fadeText1">Today is your day! This is the day you make everything happen. Its not 
 		about your past, its not about what will happen way in the future. 
 		
@@ -227,19 +191,27 @@ The Positive News
 		
 		
 		</div>
-
- 		
-		<div id="art0">
-			<img src="image/headRest.jpg" id="imgT">
-	<h3>DO YOU REALLY WANT TO SLEEP YOUR LIFE AWAY??</h3>
-	<h3>Ten things to do to be successful now:</h3>
-	<p class="p1"><h4>
+		<div id="DefinitionF">
+		
+		<p class="p5">success</p><p class="p6">[Def. 1].(n.d.). Oxford-Dictionary Online. In Oxford-Dictionary. Retrieved December 21. 2014, 
+		from <p class="p0">http://www.oxforddictionaries.com/definition/.</p></p>
+		<p class="p7">1The accomplishment of an aim or purpose:</p>	
+		
+			<h3>Ten things to do to be successful now:</h3>
+	<p class="p1">
 One of the most important ways you can be successful in life is to find meaning in what you are doing. To live in a way where your
 behaviors matter. Where you feeling like you are accomplishing something. And one of the most startling things about doing this is:
 Anyone can do it. Take Steven hawkins, or ... or...... These are not remarkable people in the sense that they are different from
 a regular person. They have just had profound meaning attached to there actions. </p>
+		</div>
+		</div></div><div class="col-sm-4 three">
+<div class="inner-rightFirst" ">
+		<div id="art0">art0
+			<img src="image/headRest.jpg" id="imgT">
+	<h4>DO YOU REALLY WANT TO SLEEP YOUR LIFE AWAY??</h54\>
 
-THE SECRET TO BEING SUCCESFUL
+
+<p class="p1">THE SECRET TO BEING SUCCESFUL
 
 Define what Success is to you.
 You may be working in an area with others and have set up your expectation for success, say for example you work in 
@@ -249,57 +221,110 @@ more projects than you. One day finally you are getting ready to through up your
 be the best but keep getting beat out. But instead of labeling yourself as an inferiour employee you come to the realization
 that you have been taking more time to get to know other people and have been taking more time with your friends and family off
 of work than the person who has been higher numbers. You realize that success to you is really to achieve an incredible amount
-of production on the job but also be incredibly successful in relationships.</h4>
+of production on the job but also be incredibly successful in relationships.</p>
+</div></div></div></div>
+
+
+<div class="row videoBox1 first">
+<h3>Inspiring Videos To Watch!!!</h3>
+<div class="row rthree"><div class="col-sm-4 hidden-xs"><div class="inner-leftLarge">
+<div id="PicVid7a"><button onclick="myFunction7a()"><img src="image/VinceSm1.png" class="img-responsive"></div>
+<div id="PicVid8a"><button onclick="myFunction7a1()"><img src="image/PursuitInterviewSm1.png" class="img-responsive"></div>
+<div id="PicVid9a"><button onclick="myFunction7a2()"><img src="image/RockyBoardSpeechSm1.png" class="img-responsive"></div>
+</div></div>
+<div class="col-sm-8 hidden-xs  inner-big-right">
+<div id="PicVid10a"><button onclick="myFunction7a3()"><img src="image/v8Coach.png" class="img-responsive"></div>
+<div class="frame">Deep down inside you know you have no limits. There is nothing that can stop you.You are an indesructible'+
+ 'force!!Deep down inside you know you have no limits.<div id="PicVid11a"><button onclick="myFunction7a4()"><img src="image/AnyGivenSundaySmall1.png" class="img-responsive">
+</div><div id="PicVid12a"> <button onclick="myFunction7a5()"><img src="image/AnyGivenSundaySmall1.png" class="img-responsive"></div>
+</div></div></div>
+
+
 </div>
-		<div id="Definition">
-		<p class="p5">resilient</p><p class="p6">[Def. 1].(n.d.). Oxford-Dictionary Online. In Oxford-Dictionary. Retrieved December 21. 2014, 
-		from http://www.oxforddictionaries.com/definition/.</p>
-		<p class="p7">1(Of a substance or object) able to recoil or spring back into shape after bending, 
-		</p>
-		
-		<p class="p5">success</p><p class="p6">[Def. 1].(n.d.). Oxford-Dictionary Online. In Oxford-Dictionary. Retrieved December 21. 2014, 
-		from http://www.oxforddictionaries.com/definition/.</p>
-		<p class="p7">1The accomplishment of an aim or purpose:</p>	
-		
+
+
+
+<div id="holder">
+
 	
+		<div class="row rthree1"></div>
+
+        <div class="row rthree2"></div>
+	    
+	    <div class="row rthree3"></div>
+		  
+		<div class="row rthree5"></div>
+
+		<div class="Definition1 first"></div>
+		 	
+		<div class="row rthree4"></div>
+		
+		<div class="row rthree5">
+	
+
 		
 		</div>
-	<div id="LowColumn">
-		<div id="topLow">
-	Get Excited
-	</div>
-		<div id="slides">
-		<ul>
-			<li><img src="image/headRest.jpg" height="185px" width="300px" class="slide-img"/></li>
-			<li><img src="image/sunflowerC.jpg"height="185px" width="300px" class="slide-img"/></li>
-			<li><img src="image/WaterStones.jpg"height="185px" width="300px" class="slide-img"/></li>
-		</ul>
+		
+		<div class="row rthree6">
+		
+
+		
 		</div>
-		Everyday we come across a number of situations that we can draw strength. Everyday we come across a number of situations that we can draw strength. One day finally you are getting ready to through up your hands and just say I've done all I can to 
-be the best but keep getting beat out. But instead of labeling yourself as an inferiour employee you come to the realization
-that you have been taking more time to get to know other people and have been taking more time with your friends and family off
-of work than the person who has been higher numbers. You realize that success to you is really to achieve an incredible amount
-of production on the job but also be incredibly successful in relationships.
-	</div>
 
-	
 </div>
-	
+
+<div class="row videoBox">
+<h3>Inspiring Videos To Watch!!!</h3>
+<div id="PicVid1"><button onclick="myFunction1()"><img src="image/v1Dnz.png" class="img-responsive"></div>
+<div id="PicVid2"><button onclick="myFunction2()"><img src="image/v2Cathlete.png" class="img-responsive"></div>
+<div id="PicVid3"><button onclick="myFunction3()"><img src="image/v8Coach.png" class="img-responsive"></div>
+<div id="PicVid4"><button onclick="myFunction4()"><img src="image/v5cop.png" class="img-responsive"></div>
+<div id="PicVid5"><button onclick="myFunction5()"><img src="image/v2Deb.png" class="img-responsive"></div>
+<div id="PicVid6"><button onclick="myFunction6()"><img src="image/v4Dr.png" class="img-responsive"></div>
 </div>
-	
-<!--JS Scroll Section-->
 
-<div id="wrap"><img src="">
-<div class="newData2"><p class="p10">The inner html of this text will dynamically change after scrolling beyond a certain point.</p></div>
-<div class="newData3"><div class="inner-left" style="background-image: url(image/Balloons.jpg)"></div><div class="center"><p class="p11">There is no fear in love.</div><div class="inner-right" style="background-image: url(image/skyR.jpg)">.</div></div>
-<div class="newData4"><div class="inner-big-left"<p class="p12">>Battles are won before ever even taking a step out on the battle field.
-You can claim victory!!!!!!</div><div class="inner-right" style="background-image: url(image/sbuilding.jpg)">Info to the left.</div></div>
+<div class="row videoBox">
+<h3>More Inspiring Videos!!!</h3>
+<div id="PicVid1a"><button onclick="Rocky()"><img src="image/RockySm1.png" class="img-responsive"></div>
+<div id="PicVid2a"><button onclick="Pursuit()"><img src="image/PursuitSm1.png" class="img-responsive"></div>
+<div id="PicVid3a"><button onclick="Sparta()"><img src="image/300SpartaSmall1.png" class="img-responsive"></div>
+<div id="PicVid4a"><button onclick="Champion()"><img src="image/CoachChampSm1.png" class="img-responsive"></div>
+<div id="PicVid5a"><button onclick="AnySunday()"><img src="image/AnyGivenSundaySmall1.png" class="img-responsive"></div>
+<div id="PicVid6a"><button onclick="HSathelete()"><img src="image/AthleteSm1.png" class="img-responsive"></div>
 </div>
-<div id="content">What goes here</div>
-
-<!--End js scroll-->
 
 
-	
-</body>
+
+
+</div>
+
+	<!--<script src="http://code.jquery.com/jquery.js"></script>-->
+
+
+  </body>
+<div class="footer">The footer goes here.
+  
+<p class="p5">resilient</p><p class="p6"><p class="p0">http://www.oxforddictionaries.com/definition/.</p></p>
+<p class="p7">1(Of a substance or object) able to recoil or spring back into shape after bending, </p><p class="p5">success</p><p class="p6"> <p class="p0"></p></p>
+
+<ul class="list-inline bottom">
+<li><a id="modal_trigger" href="#modal">Contacts</a></li>
+<li><a href="riddlesTeam.html">Excersises</a></li>
+<li><a href="Games.html">Games</a></li>
+<li><a href="articles.html">Articles</a></li>
+<li><a href="sayings.html">Quotes</a></li>
+</ul>
+<p class="p6" style="margin-bottom:0%">All rights reserved copywright@2015</p>
+
+</div>
 </html>
+	
+	<script type="text/javascript" src="js/videoTitle.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
