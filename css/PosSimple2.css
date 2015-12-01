@@ -733,6 +733,25 @@ margin-left:1%;
 
 @media (max-width: 531px) {
 	
+#head{
+font-size: 1.4em;
+border-bottom: ;
+margin-bottom: 2%;
+}
+
+#containerCircles{height: 20px; width: 425px;color:black; background-color:#C9ccF3; border: ;}
+
+.img-circle{font-size:1.6em;
+float:;
+font-weight:bold;
+background-color:#A0A0A0;
+width:35px;
+height:35px;
+text-align:center;
+margin-left:1%;
+}
+
+	
 #fadeText1{
 position:;
 display: none;
@@ -804,7 +823,7 @@ display: ;
 		margin-top: 20px;
 	}
 	.jumbotron {
-		padding-top: 80px;
+		padding-top: 50px;
 		margin-bottom: 32px;
 	}
 	.lead {
