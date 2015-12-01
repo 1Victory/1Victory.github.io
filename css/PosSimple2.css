@@ -785,6 +785,23 @@ color: blue;
 .inner-leftLarge{width:100%;}
 .inner-big-right{width:100%;}
 
+.list-inline{
+	
+	font-size:1.1em;
+	padding:0 .5%;
+	font-family:times new roman;
+	margin-top: 1%;
+	color:white;
+}
+.list-inline.bottom{
+	
+	font-size:.7em;
+	padding:0 .2%;
+	font-family:times new roman;
+	margin-top: 1%;
+	color:white;
+}
+
 }
 
 @media (max-width: 991px) {
