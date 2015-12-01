@@ -741,12 +741,12 @@ margin-bottom: 2%;
 
 #containerCircles{height: 20px; width:385px; color:black; background-color:#C9ccF3; border: ;}
 
-.img-circle{font-size:1.6em;
+.img-circle{font-size:1.3em;
 float:;
 font-weight:bold;
 background-color:#A0A0A0;
-width:35px;
-height:35px;
+width:30px;
+height:30px;
 text-align:center;
 margin-left:1%;
 }
